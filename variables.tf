@@ -221,9 +221,3 @@ variable "protect_from_scale_in" {
   description = "Allows setting instance protection. The autoscaling group will not select instances with this setting for terminination during scale in events."
   default     = false
 }
-
-variable "asg_ignore_changes" {
-  description = "A list of Autoscaling resource attributes to ignore when their values are changed. Useful with desired_capacity as an example"
-  type        = "list"
-  default     = []
-}
