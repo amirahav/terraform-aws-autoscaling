@@ -63,6 +63,7 @@ resource "aws_autoscaling_group" "this" {
 
   lifecycle {
     create_before_destroy = true
+    ignore_changes        = "${var.asg_ignore_changes}"
   }
 }
 
